@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center; /* Center content horizontally */
+    background-color: #000; /* Set the background color to black */
+    color: #000000; /* Set text color to white */
+}
+
+/* Rest of your existing CSS styles */
+
+
+header {
+    background-color: #333;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: rgb(0, 234, 255);
+    text-decoration: none;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.product-card {
+    background-color: #00d5ff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 80%; /* Take up full width */
+    box-sizing: border-box;
+}
+
+.product-card img {
+    width: 100%; /* Make the image take up the full width of its container */
+    max-width: 100%; /* Ensure the image doesn't exceed its natural size */
+    height: auto; /* Maintain the aspect ratio */
+}
+
+
+.product-card h3,
+.product-card p {
+    margin-top: 10px;
+    text-align: center; /* Center text horizontally */
+}
+
+.product-card button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    padding: 20px;
+    color: rgb(0, 200, 255);
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 700px) {
+    .product-card {
+        width: 100%;
+    }
+}
+
+/* Add styles for the hero section */
+#hero {
+    background-image: url('/assets/store_image.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 100px 500px; /* Adjust padding based on your design */
+}
+
+#hero h1 {
+    font-size: 2.5em; /* Adjust font size based on your design */
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 1.2em; /* Adjust font size based on your design */
+    margin-bottom: 30px;
+}
+
+#hero button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1em; /* Adjust font size based on your design */
+    border: none;
+    cursor: pointer;
+}
+
+/* Add any additional styles as needed */
+
+
